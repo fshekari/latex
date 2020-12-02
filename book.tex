@@ -1,0 +1,383 @@
+\documentclass{book}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{float}
+\begin{document}
+	
+	\begin{table}
+		\begin{center}
+			
+		\caption{\textbf{Table 5.3 Software Planning Tasks}}
+		\label{Table 5.3}
+		\centering
+		\setlength{\leftmargini}{0.5cm}
+		\begin{tabular}{| m{8cm} | m{8cm} |}
+			
+			\hline Software Planning Tasks & Locations\\
+			\hline Methods for developing and maintaining the SDP & 1.5.1, 5.1.1, 5.3.2, 6.6.3, 10.1, 13.3\\
+			\hline Software Data Management (DM) & 4.4, 5.1.10, 10.2, 9.5, 12.5, 13.4\\
+			\hline Software size and resource estimation & 3.2.2, 3.4, 3.7, 5.1.3, 9.5.1, 13.4, Chapter 14\\
+			\hline Software build planning & 3.4, 5.1.4, 8.2, 8.7\\
+			\hline Software integration and test (I\&T) planning & 2.3.9, 3.6, 3.7, 10.3, 8.5, 8.7\\
+			\hline Software Development Environment and support tools & 6.3, 12.1, 12.3, 12.11\\
+			\hline Software acceptance, delivery, installation, transition, operations,\\
+			sustainment and retirement planning  & 5.1.9, 8.8, 8.9, 9.8.2, 16.2, 16.3\\
+			\hline Software Configuration Management & 2.4.3, 5.1, 6.3, 6.4, 8.6, 12.3, 16.1\\
+			\hline Software evaluations with formal and informal reviews & 2.4.5, 6.1.2, 6.2, 6.5, 13.4\\
+			\hline Software Quality Assurance (SQA) & 2.3.5, 2.4.2, 5.1, 6.2, 10.8.2, 13.4\\
+			\hline Problem resolution methods and Preventive Action & 5.1, 5.2.3, 6.2, 6.4, 10.3.4, 10.4.5, 8.5.8, 9.10.5, 12.4, 15.2\\
+			\hline Software risk management & 1.6.3, 2.3.2, 5.2, 6.4.3, 6.6.3, 9.5.2, 9.6.3, 13.4, 16.5\\
+			\hline Software metrics covering products and processes & 1.5.1, 2.3.3, 3.10.8, 5.1.4, 6.1.2, 13.4, Chapter 15\\
+			\hline Security and Privacy issues & 3.10.2, 5.2.5, 5.4.1, 10.4.3, 9.5, 9.8.2\\
+			\hline Oversight of software subcontracts & 5.1.2, 5.5, 11.2, 11.3.2\\
+			\hline Software schedules with critical interdependencies & 2.3.4, 2.6, 4.4, 5.1, 8.6, 8.8, 9.8.2, 11.4, Appendix D\\
+			\hline Software organization, roles and responsibilities & 1.5.1, 1.6, 8.1.4, 8.2.3, 8.4.3, 8.5.3, 8.6.3, 10.1, Appendix C\\
+			\hline Required resources, skills and staffing plan & 10.1, 10.2, 10.3, 11.3\\
+			\hline Training plans and training requirements & 2.3.7, 4.3.9, 6.1.3, 8.9.9, 10.5, 10.8.4, 10.9, 11.3.5\\
+			\hline Software Operations and Maintenance & Chapter 16\\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{table}
+	\begin{multicols}{2}
+		\textbf{Corrective Action Process (CAP)}
+		
+		Unplanned updates to the SDP must be handled through the CAP as described
+		in the SDP or the Corrective Action Plan if you have one. All changes to the SDP should require approval by the CSwE
+		and the program SEPG. This Guidebook assumes the project has a CSwE, or an equivalent position, as described in
+		Subsection 1.6.4. Changes to the SDP also should require CCB approval as discussed in Subsection 6.4.3. The SEPG is
+		described in Subsection 6.1.1.
+		
+		\textbf{Software Entity Database (SWED)}
+		
+		A database, that can be called the Software Entity Database, should be produced and periodically updated to provide a mechanism for identifying, profiling and tracking all Software Items (SIs) on
+		the project. Each subsystem should be responsible for their data input to the SWED, but the CSwE should be responsible for compiling this information into a single centralized and controlled database for the project or the program. This database may include for each SI in the project: a functional description of the SI, class, category, size, the percent of new
+		versus reused code, responsible Developer(s) and their contact information, and language(s) used.
+		
+		\textbf{5.1.3 Software Resource Estimating} 
+		
+		Software resources, including physical, personnel, cost and computer resources, should be estimated before software
+		development begins. These estimates are used to establish software development schedules, risk mitigation plans, and
+		commitments and should be documented in a Software Resource Estimation Plan. Details of managing the software
+		resources are provided in Part 3 of the Guidebook.Software personnel should participate with other affected
+		groups (Systems Engineering, SQA, SCM, test, etc.) in the overall program planning throughout the program as  %page 2
+
+		members of Software Integrated Product Teams (SwIPTs).
+		The SwIPTs are discussed in Subsection 1.6.5. Commitments,
+		or changes to commitments, made to individuals and external groups must be reviewed with management regularly.
+		\textbf{Staffing Estimation.} In order to determine the level
+		of staffing required, the planning function should consider
+		program constraints including milestones, reviews, document and product deliveries, internal milestones, incremental builds, technical constraints, and any changes in
+		scope. Estimates of Source Lines Of Code and software
+		development productivity play an important role in staffing
+		estimates.
+		\textbf{Re-planning}. The software groups should participate,
+		when required, in re-planning activities to address contract
+		changes, process improvements, or when measured performance varies from planned performance. The related data
+		that is generated must be maintained and placed in the
+		applicable Software Development Files (SDF) or Software
+		Engineering Notebooks. Software personnel also should participate in contract/subcontract modification activities (such
+		as engineering change proposals). Chapter 14 covers software
+		estimating fundamentals, methods, size growth and estimation tools.
+		\textbf{\textit{5.1.4 Software Build Planning}}
+		A software build is a portion of a system that satisfies, in part
+		or completely, an identifiable subset of the total end-item or
+		system requirements and functions. There are often multiple
+		internal builds leading to a deliverable build for an increment
+		in the life cycle. Requirements met in one incremental build
+		are also met in all successive increments. The final build is the
+		complete software system. A release is a build version that
+		is delivered for acceptance testing and subsequently may be
+		released or delivered for operational use. Incremental builds
+		can be planned for each SI, or group of SIs.
+		\textbf{Software Build Plan.} A table, similar to the example in
+		Table 5.4, must be included in the SDP, or a separate document referenced by the SDP, to show the intended software
+		delivery plan. The table must include a unique number, often
+		called the Program Unique Identifier (PUI), for each Software
+		Item and its name, the responsible developing organization,
+		and Equivalent Source Lines of Code (ESLOC) planned for
+		each build. Subsection 14.1.3 provides an explanation of
+		how ESLOC is derived. As shown in Table 5.4, the version
+		(preliminary, initial, update, fixes) can be identified for each
+		delivery.
+		\textbf{Software Master Build Plan (SMBP)}. A comprehensive
+		SMBP must be provided to map the incremental functionality, capabilities and requirements allocated to each build.
+		The CSwE, or Build Manager, usually maintains the SMBP
+		with the approval of the Software CCB. Once approved, the
+		SMBP should be controlled by SCM. In a large program,
+		this is not a trivial issue.
+		As the Project Manager, you, the CSwE, or the Software
+		Build Manager, should routinely report the status and 
+
+		
+	\end{multicols}
+ 
+	\begin{table}
+		\begin{center}
+			
+		\caption{\textbf{Table 5.4 SI Build Delivery Plan—Example}}
+		\label{Table 5.4}
+		\begin{tabular}{|l |l |l |l |l |l |l|}
+			\hline PUI & Software Item Name & Developer & Build-1 & Build-2 & Build-3 & Total\\
+			\hline    & Total for 18 SIs: &  & 102,000 & 65,000 & 130,000 & 297,000\\
+			\hline 1.0 & Decision Support & & 45,000 & 28,000 & 48,000 & 121,000\\
+			\hline 1.1 & Decision Analysis & Able Corp & I & UWDR & U & \\
+			\hline 1.2 & Analytical Algorithms & Able Corp &  & I & U & \\
+			\hline 1.3 & Scenario Analysis & Able Corp &  & I & U & \\
+			\hline 1.4 & Test Bed Controls & Baker Co. & P & I & U & \\
+			\hline 1.5 & Traffic Control & Baker Co. & I & UWDR & U & \\
+			\hline 1.6 & Simulation Analysis & Baker Co. & P & I & U & \\
+			\hline 2.0 & Services Support & & 30,000 & 18,000 & 12,000 & 60,000\\
+			\hline 2.1 & Routing Analysis & Charlie Co. & P & I & U & \\
+			\hline 2.2 & User Support & Charlie Co. &  & I & UWDR & \\
+			\hline 2.3 & XYZ Services & Charlie Co. & I  & UWDR & UWDR &\\
+			\hline  & etc. & etc.& & & & \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{table}
+	
+	\textbf{P} = Preliminary Version; \textbf{I} = Initial Delivery; \textbf{U} = Updated Delivery; \textbf{} = No Delivery; \textbf{UWDR}= Updates for Work-Offs of
+	Discrepancy Reports;\textbf{ “00,000”} = Number of ESLOC per Build; \textbf{PUI} = Program Unique Identifier.%page 3
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.6]{pic1.jpg}
+		\caption{Software management from a measurement perspective}
+		\label{pic1}
+	\end{figure}
+	\begin{multicols}{2}
+		changes to the involved upper-level Program Manager(s). The
+		SMBP may also be called the “Master Software Integration
+		and Verification Plan” or may be referred to as a “Build
+		Functionality Matrix.” The SMBP is a software document,
+		and it must be compliant with the Master Test Plan (MTP)
+		which is a system-level document covering hardware and
+		software.
+		\textbf{Build Planning Updates}. Software build planning
+		should occur for each program increment and each deliverable build and be updated continuously throughout the program. Build plans are typically updated only when the plan
+		contents change significantly as determined by the SwIPT
+		Lead.
+		When planning the builds, the project schedule, ESLOC,
+		and functional content estimates must be taken into consideration. As the program matures, additional design, requirements, technical content, and testing approaches should be
+		added. The build activities should be documented in detailed
+		schedules and then incorporated into the IMS along with
+		staffing and budget-plan information.
+		\textbf{5.1.5 Software Development
+			Tracking and Oversight}
+		The software tracking and oversight effort begins once software planning is complete. Subsystem SwIPTs, Software
+		Leads, the Chief Software Engineer, and Software Quality
+		Assurance, can monitor software development status by:
+		\begin{itemize}
+		\item Collecting and evaluating software measurement data
+			(see Chapter 15)
+		\item Performing product quality and process audits (see
+			6.1.2 and 6.2)
+		\item Supporting software reviews (see 5.3)
+		\item Performing risk management activities (see 2.3.2, 3.9.4
+			and 5.2) 
+		\end{itemize}
+		
+		\textbf{Software Measurement Oversight}. Throughout the
+		development process, software measurement data must
+		be used to compare actual software size, cost, schedule
+		and progress against the established plan so that you
+		can take timely Corrective Actions (see Section 6.4). If
+		those metrics indicate out-of-tolerance conditions, you or
+		Subsystem SwIPT members must perform an analysis to
+		identify the problem. At that point, you must take the
+		appropriate Corrective Action and identify the potential
+		risks including cost and schedule impacts. The Software
+		Measurement (or Metrics) Plan is an important addendum
+		to the SDP. Chapter 15 is entirely devoted to software
+		measurements.
+		The status of software should be reviewed (usually
+		weekly) at subsystem-level meetings and at monthly program
+		status meetings. In addition, software status should be provided to the customer monthly and also at quarterly reviews.
+		Software management and control must be integrated into
+		your overall program management scheme. Figure 5.2 is a
+		depiction of software management from a measurement
+		perspective.
+		As shown in Figure{\ref{pic1}}, software measurement oversight
+		involves:
+		\textbf{Software-specific measurements:}
+		\begin{itemize}
+		\item Schedule and Progress Measurements
+		\item Resources and Cost Measurements
+	    \item Product Quality Measurements
+		\item Performance Measurements
+		\item Growth and Stability Measurements
+		\end{itemize}
+		
+		\textbf{Non-software-specific measurements:}
+			\begin{itemize}
+		\item Risk Management Measurements
+    	\item Financial Management Measurements
+		\item Programmatic Measurements %page4
+			\end{itemize}
+		\textbf{Cost Account Oversight.} Software work packages are
+		typically cost accounts within the Earned Value Management
+		System (EVMS) used by many contractors (EVMS is
+		described in Section 8.5). The cost account must be at a level
+		of detail sufficient to maintain control of the associated software development activities. Ongoing metrics collected on
+		the cost accounts and work packages must be reported to
+		program management and available to the customer.
+		\textbf{Schedule Oversight.} Schedule review meetings are normally conducted weekly or more often if the schedule is consistently changing. Schedule metrics (using weekly milestone
+		accomplishments, including subcontractor data) should be
+		reported along with the status of Corrective Action/recovery
+		plans. IMS and detailed schedules should also be reviewed at
+		lower levels within the SwIPTs.
+		\textbf{Headcount Oversight}. SwIPTs should monitor headcount on a weekly basis and strive to identify potential problems early. Updates of accomplishments, actual budgeted
+		and forecasted headcounts should be conducted monthly.
+		Forecasts should be updated and reported in internal cost
+		performance reports that include cost/schedule variances
+		and changes in the latest revised estimate. Costs and schedules should be controlled by monitoring headcount, expenditures, and assessing progress.
+		\textbf{Product and Process Oversight}. Product evaluations,
+		software reviews, process audits and assessments are used by
+		Subsystem SwIPTs, CSwE, and SQA as a means to determine
+		compliance with the standards established by the SDP. Noncompliance of baselined products is handled via the Corrective
+		Action Process (see Section 6.4). Process audits must be performed by SQA, with support from the CSwE, to determine
+		compliance with the processes specified in the SDP. SQA
+		must be responsible for documenting and verifying closure
+		of a non-compliance issue. Subsection 6.5.6 describes the
+		software product evaluation process. You or your senior management must implement and maintain the mechanisms for
+		interfacing to and communicating with the customer.
+	\end{multicols}
+
+	\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{pic2.jpg}
+	\caption{Relative cost of gold plating.}
+	\label{pic2}
+\end{figure}
+\begin{multicols}{2}
+\textbf{5.1.6 Avoid Gold Plating}
+A passion for excellence and efficiency is much less
+expensive to attain than a passion for perfection.
+There is a tendency for all Engineers to overachieve. That
+is often called “gold plating.” Tasks performed that are not
+called out in the contract as a system requirement can be
+considered gold plating unless the task is a derived requirement essential to system functionality. Rework to make it
+“better” and then more rework to make it “even better,” and
+continuing this “polishing the apple” approach always has a
+severe impact on project cost and schedule. It is understood
+that Engineers typically want to continue working on their
+task to make it as good as possible. As the Software Project Manager, you must be careful to avoid this perfectionist pitfall.
+For example, Figure(\ref{pic2})is a notional curve showing the relative cost of perfection versus system functionality required.
+The cost and time to achieve perfection is very high.
+Where human lives and safety are involved, perfection
+can be justified, and the customer must pay for it; otherwise, perfection is too expensive. When you reach 100% of the
+functionality required by the contract, you have fulfilled the
+contract requirements. If the time and cost at that point is
+\$1X, as shown in Figure(\ref{pic2}), perfection can be at least three
+times more expensive and time-consuming.
+\textbf{Lessons Learned}. The last 5\% is costly. It may be
+human nature to delay submitting your product
+until it is perfect, but it is a Software Manager’s
+responsibility to see to it that gold plating does
+not happen. I have observed that, if human lives
+and safety or not involved, 95\% of the planned
+functionality often satisfies 95\% of the users;
+that last 5\% is a very steep part of the curve so, if
+you can avoid it, you could realize a big cost savings. This is a tricky game to play. Most “shrink
+wrapped” software products probably do not
+come close to 95\% of full functionality when the
+product is initially delivered to the marketplace.
+\textbf{5.1.7 Software Item Test Planning}
+The testing of Software Items being developed by the subsystems should be performed by the respective subsystem Software Test Engineers. They are responsible for documenting their Software Test Plan (STP), Software Test
+Description (STD), and Software Test Report (STR) to verify
+that the SIs meet their allocated subsystem requirements.
+A preliminary version of the STP is usually produced
+during Software Design activities, but the full STP is the
+result of the SI test planning activity. Production of the STD
+and STR is performed during Software Item Qualification
+Testing (SIQT) and is discussed in Section 11.7. Test activities for the critical (SCS) and support (SS) software classes
+must also be documented in the Software Development Files
+as described in Section 9.4.
+\textbf{Software Test Plan.} The STP describes plans for qualification testing of SIs and is an important software document.
+It describes the test environment to be used, identifies the
+tests to be performed, provides schedules for the testing tasks,
+defines the resources needed, and addresses the planning
+tasks required to conduct the SIQT. Table 5.5 is an example
+summary of the readiness criteria in terms of entry, exit and
+verification criteria to ensure completeness of the STP.
+\textbf{5.1.8 System Test Planning}
+The SDP should contain the approach for providing support
+to System Test Planning. If there is a System Verification and
+Test Plan (it may also be referred to as an Integration, Test and
+Evaluation Plan), it should be prepared by the SEIT. It is the key
+planning document for system testing. System Integration and
+System Test activities are described in sections 10.3 and 10.4.
+The System Test Team should be responsible for performing the actual system testing. Software Developers and/or
+Software Test Engineers have a support role in System Test
+Planning that may include reviewing test preparation materials and providing software test support items, such as reusable software test documentation, simulators, drivers and
+analysis tools. Software Engineers also support anomaly
+analysis to determine if the problem is due to software only,
+hardware only, or a combination. If Regression Testing on
+the software builds is needed, SCM must provide the software builds against which the tests are conducted. Regression
+Testing is discussed in Subsection 3.9.3.
+\textbf{5.1.9 Planning for Software Transition}
+to Operations and Maintenance
+Planning for Software Transition to Operations. The
+SDP must describe the approach for performing the software
+installation planning. This activity involves the preparation
+for, and the installation and checkout, of the executable software at a user site. Planning and preparation should start
+relatively early in the life cycle to ensure a smooth transition 
+
+
+\end{multicols}
+\begin{table}[h]
+	\centering
+	\setlength{\leftmargini}{0.5cm}
+	\begin{tabular}{| m{8cm} | m{8cm} |}
+		\hline
+		\textbf{\textbf{Entry Criteria}} & \textbf{Exit Criteria}\\
+		\hline
+		\begin{itemize}
+			\item The appropriate STP data items and
+			other reference materials are obtained.
+			\item Software requirements are established
+			in the Software Requirements
+			Specification and Interface
+			Requirements Specification (IRS) and
+			are traceable to a parent requirement.
+			\item The top-level software architecture is
+			established.
+			\item The Requirements Test Verification
+			Matrix (RTVM) specifies the test
+			verification method and level for each
+			requirement in the SRS and IRS. (See
+			11.1.2).
+		\end{itemize} &
+		The following tasks have been defined and documented in the STP:
+		\begin{itemize}
+			\item Test environment (sites, hardware, software, test tools, test facilities,
+			test data, etc.) needed to conduct the life cycle tests.
+			\item Test scenarios to be performed including the schedule for executing
+			the test activities.
+			\item Traceability between SI requirements and the related tests and test
+			phases where the requirements are verified.
+			\item Personnel, organizations, responsibilities and management activities
+			needed to develop and implement the planned testing.
+			\item The objectives for each test including test level, type, conditions, data
+			to be recorded, qualification method(s), data analysis, assumptions and
+			constraints, safety, security and privacy considerations.
+			\item Approach to related issues such as data rights, training, Regression
+			Testing, delayed functionality and deliverable documentation.
+			\item Criteria for evaluating the test results.
+		\end{itemize} \\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Verification Criteria}}\\
+		\hline
+		\multicolumn{2}{|l|}{aaaaa}\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Measurements}}\\
+		\hline
+		\multicolumn{2}{|l|}{\textbf{Statistics from the STP Peer Review. (See Chapter 15)}}\\
+		\hline
+	\end{tabular}
+\end{table}
+	
+	\end{document}
